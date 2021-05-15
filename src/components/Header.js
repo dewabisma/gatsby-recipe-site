@@ -1,10 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
 
 import logo from "../assets/images/logo.svg"
 
 const Header = () => {
+  const [show, setShow] = useState(false)
+
   return (
     <nav className="navbar">
       <div className="nav-center">
@@ -13,12 +15,17 @@ const Header = () => {
             <img src={logo} alt="simply recipes logo" />
           </Link>
 
-          <button className="nav-btn">
+          <button className="nav-btn" onClick={() => setShow(!show)}>
             <FaBars />
           </button>
         </div>
-        <div className="nav-links show-links">
-          <Link to="/" className="nav-link" activeClassName="active-link">
+        <div className={show ? "nav-links show-links" : "nav-links"}>
+          <Link
+            to="/"
+            className="nav-link"
+            activeClassName="active-link"
+            onClick={() => setShow(false)}
+          >
             Home
           </Link>
           <Link
@@ -28,14 +35,24 @@ const Header = () => {
           >
             Recipes
           </Link>
-          <Link to="/tags" className="nav-link" activeClassName="active-link">
+          <Link
+            to="/tags"
+            className="nav-link"
+            activeClassName="active-link"
+            onClick={() => setShow(false)}
+          >
             Tags
           </Link>
-          <Link to="/about" className="nav-link" activeClassName="active-link">
+          <Link
+            to="/about"
+            className="nav-link"
+            activeClassName="active-link"
+            onClick={() => setShow(false)}
+          >
             About
           </Link>
           <div className="nav-link contact-link">
-            <Link to="/contact" className="btn">
+            <Link to="/contact" className="btn" onClick={() => setShow(false)}>
               Contact
             </Link>
           </div>
