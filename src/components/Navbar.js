@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa"
 
 import logo from "../assets/images/logo.svg"
 
-const Header = () => {
+const Navbar = () => {
   const [show, setShow] = useState(false)
 
   return (
@@ -62,4 +62,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar
