@@ -1,10 +1,39 @@
 import React from "react"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+
 import Layout from "../components/Layout"
 
 const About = () => {
   return (
     <Layout>
-      <h1>Hello From About</h1>
+      <main className="page">
+        <section className="about-page">
+          <article>
+            <h2>Yeah, We Can Cook All Day!</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit
+              amet nisi. Officiis eveniet eius reprehenderit dolores sapiente
+              quae aliquam!
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi error consectetur reprehenderit sint, deleniti
+              laudantium.
+            </p>
+            <Link to="/contact" className="btn">
+              Contact
+            </Link>
+          </article>
+
+          <StaticImage
+            src="../assets/images/about.jpeg"
+            alt="A Person Pouring Salt Into a Bowl"
+            placeholder="blurred"
+            className="about-img"
+          />
+        </section>
+      </main>
     </Layout>
   )
 }
