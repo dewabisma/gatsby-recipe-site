@@ -3,27 +3,15 @@ import { Link } from "gatsby"
 
 const Header = () => {
   return (
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-
-      <li>
-        <Link to="/recipes">Recipes</Link>
-      </li>
-
-      <li>
-        <Link to="/tags">Tags</Link>
-      </li>
-
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
-    </ul>
+    <nav className="navbar">
+      <div className="nav-center">
+        <div className="nav-header">
+          <Link to="/">
+            <img src="" alt="simply recipes logo" />
+          </Link>
+        </div>
+      </div>
+    </nav>
   )
 }
 
