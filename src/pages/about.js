@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout"
 import RecipesList from "../components/RecipesList"
-import SEO from "../components/SEO"
+import Meta from "../components/Meta"
 
 const About = ({
   data: {
@@ -13,7 +13,7 @@ const About = ({
 }) => {
   return (
     <Layout>
-      <SEO title="About" />
+      <Meta title="About" />
       <main className="page">
         <section className="about-page">
           <article>

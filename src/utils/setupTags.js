@@ -1,5 +1,4 @@
 const setupTags = recipes => {
-  console.log("setting up tags")
   let allTags = {}
 
   recipes.forEach(recipe => {
