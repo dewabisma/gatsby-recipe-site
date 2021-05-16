@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import setupTags from "../utils/setupTags"
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const Tags = ({
   data: {
@@ -11,6 +12,7 @@ const Tags = ({
   const tags = setupTags(recipes)
   return (
     <Layout>
+      <SEO title="Tags" />
       <main className="page">
         <section className="tags-page">
           {tags.map(tag => {
