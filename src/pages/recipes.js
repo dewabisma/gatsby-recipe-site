@@ -6,7 +6,7 @@ const Recipes = () => {
   return (
     <Layout>
       <main className="page">
-        <h1>From Recipes</h1>
+        <h1>Recipes</h1>
 
         <AllRecipes />
       </main>
