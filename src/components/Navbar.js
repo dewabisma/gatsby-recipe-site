@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
+import SearchContainer from "./SearchContainer.js"
 
 import logo from "../assets/images/logo.svg"
 
@@ -51,6 +52,8 @@ const Navbar = () => {
           >
             About
           </Link>
+          <SearchContainer />
+
           <div className="nav-link contact-link">
             <Link to="/contact" className="btn" onClick={() => setShow(false)}>
               Contact

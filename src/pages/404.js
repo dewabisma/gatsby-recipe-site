@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Meta from "../components/Meta"
+import SearchContainer from "../components/SearchContainer"
 
 const Error = () => {
   return (
@@ -11,6 +12,7 @@ const Error = () => {
         <section>
           <h1>404</h1>
           <h3>Page not found</h3>
+          <SearchContainer />
         </section>
       </main>
     </Layout>
